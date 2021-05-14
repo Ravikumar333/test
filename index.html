@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap application</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <p style="text-align:center;">
+      <img
+        src="data:image/png;base64,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"
+        style="width:11%;" alt="Logo">
+      <hr>
+
+    </p>
+
+
+    <div class="card-body">
+
+      <h6 class="text-center" style="color:Gray;">PLEASE RESPOND TO THE CUSTOMIZED CHEMICAL REQUIREMENT</h6>
+
+
+      </br>
+      <table class="table">
+        <thead class="p-3 mb-2 bg-light text-light-dark">
+
+          <tr>
+
+            <th scope="col">Products Details</th>
+            <th scope="col">Purity</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Packs</th>
+            <th class="text-right">Will you supply this chemical?</th>
+
+          </tr>
+
+        </thead>
+
+
+        <tbody>
+          <tr>
+            <th>
+              <u>Erioglaucine sodium salt</u></br>
+              <p class="text-secondary">CAS No. 19774-82-4</p>
+            </th>
+            <td>99.99%</td>
+            <td>50kg</td>
+            <td>10</td>
+
+            <td>
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">YES</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">NO</label>
+            </td>
+
+          </tr>
+
+          <tr>
+            <th scope=" row"> <u>Varenicline Nitraso Impurity</u></br>
+              <p class="text-secondary">CAS No. 19774-82-4</p>
+            </th>
+            <td>98%</td>
+            <td>10kg</td>
+            <td>5</td>
+
+            <td class="text-right">
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">YES</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck4">NO</label>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row"> <u>MANGANESE DIOXIDE Extra Pure</u></br>
+              <p class="text-secondary">CAS No. 19774-82-4</p>
+            </th>
+            <td>100</td>
+            <td>100kg</td>
+            <td>1</td>
+
+            <td class="text-right">
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck5">YES</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck6">NO</label>
+            </td>
+
+          </tr>
+
+          <tr>
+            <th scope="row"> <u>Diethanolamine(For Synthesis)</u></br>
+              <p class="text-secondary">CAS No. 19774-82-4</p>
+            </th>
+            <td>99%</td>
+            <td>1kg</td>
+            <td>3</td>
+
+            <td class="text-right">
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck7">YES</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck8">NO</label>
+            </td>
+
+          </tr>
+
+          <tr>
+            <th scope="row"> <u>Cyclohexylamine entrapure AR</u></br>
+              <p class="text-secondary">CAS No. 19774-82-4</p>
+            </th>
+            <td>90%</td>
+            <td>3kg</td>
+            <td>6</td>
+
+            <td class="text-right">
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck9">YES</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck10">NO</label>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
